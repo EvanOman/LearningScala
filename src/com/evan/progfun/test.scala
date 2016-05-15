@@ -1,14 +1,14 @@
 package com.evan.progfun
 
-import com.evan.progfun.week4._
-import com.evan.progfun.week3._
+import com.evan.progfun.week3.Rational
+import com.evan.progfun.week4.{Cons, Nil}
 
-object main
+object test
 {
-	def main(args: Array[String])
-	{
-		println("This is main!")
 
+	def main(): Unit =
+	{
+		println("This is progfun's test file")
 		testWeek4()
 	}
 
@@ -28,8 +28,8 @@ object main
 
 	def testWeek3(): Unit =
 	{
-		val a = new Rational(3,4)
-		val b = new Rational(5,4)
+		val a = new Rational(3, 4)
+		val b = new Rational(5, 4)
 		val c = a.add(b)
 
 		println(s"This is a: $a")
@@ -37,3 +37,4 @@ object main
 		println(s"This is a + b: $c")
 	}
 }
+
