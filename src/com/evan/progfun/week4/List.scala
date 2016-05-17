@@ -33,3 +33,15 @@ class Nil[T] extends List[T]
 	def nth(n: Int): Nothing = throw new IndexOutOfBoundsException("Item not found!")
 }
 
+object List
+{
+	// List(1, 2) = list.apply(1,2)
+	def apply[T](x1: T, x2: T): List[T] = new Cons[T](x1, new Cons[T](x2, new Nil))
+
+	// List(1) = list.apply(1)
+	def apply[T](x1: T): List[T] = new Cons[T](x1, new Nil)
+
+	def apply[T](): List[T] = new Nil[T]
+}
+
+

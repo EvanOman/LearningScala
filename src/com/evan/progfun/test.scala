@@ -1,7 +1,8 @@
 package com.evan.progfun
 
 import com.evan.progfun.week3.Rational
-import com.evan.progfun.week4.{Cons, Nil}
+import com.evan.progfun.week4.{Cons, Nil, List2}
+
 
 object test
 {
@@ -23,6 +24,12 @@ object test
 		val b = a.nth(0)
 
 		println(s"This is what b looks like : $b")
+
+
+		// Using new syntax:
+		val a2 = List2.List(1,2)
+
+		println(a2)
 	}
 
 
@@ -35,6 +42,7 @@ object test
 		println(s"This is a: $a")
 		println(s"This is b: $b")
 		println(s"This is a + b: $c")
+
 	}
 }
 
