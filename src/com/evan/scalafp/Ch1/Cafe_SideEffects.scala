@@ -1,8 +1,7 @@
 package com.evan.scalafp.Ch1
 
 // Version of Cafe with side effects
-
-class Cafe1
+class Cafe_SideEffects
 {
 	def buyCoffee(cc: CreditCard, p: Payments): Coffee =
 	{
@@ -25,5 +24,4 @@ class Cafe1
 	{
 		def charge(cc: CreditCard, amount: Double): Unit = {val name = cc.name; println(s"Charging $name $$$amount")}
 	}
-
 }
